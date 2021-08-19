@@ -1,0 +1,129 @@
+:root {
+    --primary-color: #7F5FDA;
+    --secondary-color: #B6A2EE;
+    
+    --text: #D2C7F1;
+
+    --white: #FFFFFF;
+    --black: #302F2F;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+h1 {
+    font-size: 4.8rem;
+    color: var(--white);
+    font-weight: 500;
+}
+
+.quiz {
+    margin: 6rem auto;
+    width: min(448px, 90%);
+}
+
+.current-question {
+    font-size: 2.4rem;
+}
+
+.current-question--bar {
+    height: 5px;
+    background-color: blue;
+    margin-top: 1.5rem;
+}
+
+.question-title {
+    margin-top: 4rem;
+    background-color: var(--primary-color);
+    width: 100%;
+    padding: 6rem;
+    color: var(--white);
+    font-size: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.question-options {
+    margin-top: 3.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.option {
+    background-color: var(--secondary-color);
+    padding: 2.5rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.option:hover {
+    background-color: var(--primary-color);
+}
+
+.question-remaining {
+    margin-top: 3rem;
+    padding: 1rem;
+    background: var(--primary-color);
+    color: var(--text);
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.score {
+    width: min(448px, 90%);
+    margin: 6rem auto;
+    background-color: var(--primary-color);
+    display: flex;
+
+    flex-direction: column;
+    padding: 5rem;
+    color: var(--white);
+}
+
+.score-congrats {
+    font-size: 4.8rem;
+    font-weight: bold;
+}
+
+.score-main {
+    margin-top: 2.5rem;
+    font-size: 3.6rem;
+}
+
+.score-main span {
+    font-weight: bold;
+    font-size: 4.8rem;
+}
+
+.score-button {
+    margin-top: 3rem;
+    padding: 1rem;
+    border: 0;
+    background: var(--white);
+    color: var(--black);
+    font-size: 2.5rem;
+    cursor: pointer;
+}
