@@ -19,9 +19,9 @@ Este repositório contêm a aplicação Quiz Interativo.
 Esse projeto foi criado com o intuito de me aprofundar em Javascript.
 O objetivo principal foi trabalhar com o setInterval e refatoração de código (ainda falta coisa).
 
-No projeto têm contagem de tempo para fazer as questões, questão atual e o resultado final.
+No projeto têm contagem de tempo para fazer as questões, questão atual, resetar o quiz e mostrar o  resultado final.
 
-Está para ser adicionado barra de progresso e botão de repetir o quiz.
+Está para ser adicionado barra de progresso.
 
 ## :hammer: Tecnologias
 Este projeto foi feito com as seguintes tecnologias:
