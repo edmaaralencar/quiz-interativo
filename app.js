@@ -8,6 +8,7 @@ const scoreContainer = document.querySelector('.score')
 const scoreText = document.querySelector('.score-main span')
 const scoreBigText = document.querySelector('.score-main')
 const scoreCongrats = document.querySelector('.score-congrats')
+const scoreButton = document.querySelector('.score-button')
 
 let questions = [
     {
@@ -96,6 +97,13 @@ const setUserScore = (answer, userAnswer) => {
     }
 }
 
+const resetQuiz = () => {
+    currentQuestion = 0
+    currentScore = 0
+    showQuestion()
+    questionContainer.style.display = 'block'
+}
+
 const showQuestion = () => {
     if (questions[currentQuestion]) {
         const question = questions[currentQuestion]
@@ -136,3 +144,4 @@ const showQuestion = () => {
 
 showQuestion()
 
+scoreButton.addEventListener('click', resetQuiz)
